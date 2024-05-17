@@ -1,22 +1,27 @@
 ---
-import '../styles/global.css';
-import ThemeToggle from '../components/theme_toggle.astro';
+import "../styles/global.css";
+import ThemeToggle from "../components/theme_toggle.astro";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
-</head>
-<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
-  <header class="p-4 flex justify-between items-center">
-    <h1>Welcome to the Home Page</h1>
-    <ThemeToggle />
-  </header>
-  <main class="p-4">
-    <p>This is your Astro project with Tailwind CSS and dark mode toggle.</p>
-  </main>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body
+    class="mx-auto container max-w-3xl bg-white dark:bg-gray-900 text-black dark:text-white"
+  >
+    <header class="p-4 flex justify-between items-center">
+      
+      <img src="./profile.jpeg" class="w-[44px] h-[44px] rounded-xl"/>
+      <h1 class="flex-grow mx-4 text-3xl" >शशांक दायमा <span class="text-base">(/translation Shashank Daima)</span></h1>
+      <h2 class="mt-2">RSS</h2>
+      <ThemeToggle />
+    </header>
+    <main class="p-4">
+      <p>This is your Astro project with Tailwind CSS and dark mode toggle.</p>
+    </main>
+  </body>
 </html>
