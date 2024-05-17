@@ -1,16 +1,22 @@
 ---
-
+import '../styles/global.css';
+import ThemeToggle from '../components/theme_toggle.astro';
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+</head>
+<body class="bg-white dark:bg-gray-900 text-black dark:text-white">
+  <header class="p-4 flex justify-between items-center">
+    <h1>Welcome to the Home Page</h1>
+    <ThemeToggle />
+  </header>
+  <main class="p-4">
+    <p>This is your Astro project with Tailwind CSS and dark mode toggle.</p>
+  </main>
+</body>
 </html>
