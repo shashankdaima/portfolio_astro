@@ -9,20 +9,70 @@ import ThemeToggle from "../components/theme_toggle.astro";
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shashank Daima | Software Developer</title>
-    <link rel="icon" type="image/x-icon" href="./profile.jpeg">
+    <link rel="icon" type="image/x-icon" href="./profile.jpeg" />
   </head>
   <body
     class="mx-auto container max-w-3xl bg-white dark:bg-gray-900 text-black dark:text-white"
   >
     <header class="p-4 flex justify-between items-center">
-      
-      <img src="./profile.jpeg" class="w-[44px] h-[44px] rounded-xl"/>
-      <h1 class="flex-grow mx-4 text-3xl" >शशांक दायमा <span class="text-base">(/translation Shashank Daima)</span></h1>
+      <img src="./profile.jpeg" class="w-[44px] h-[44px] rounded-xl" />
+      <h1 class="flex-grow mx-4 text-3xl">
+        शशांक दायमा <span class="text-base">(/translation Shashank Daima)</span>
+      </h1>
       <h2 class="mt-2">RSS</h2>
       <ThemeToggle />
     </header>
-    <main class="p-4">
-      <p>This is your Astro project with Tailwind CSS and dark mode toggle.</p>
+    <main class="flex flex-col gap-y-8 p-4">
+      <p class="text-lg">
+        Namaste! My name is Shashank, 23 years old, a software developer from
+        Faridabad, Haryana, India. Right now, living in Bangalore. This site
+        will contain my history and present work history, opinionated blogs
+        (things I don't say on Twitter with real names), etc. etc.
+      </p>
+      <div class="text-base">
+        <h3 class="text-2xl">Education</h3>
+        <ol class="list-decimal list-inside pl-2 mt-2 space-y-2">
+          <li>
+            Btech. in Computer Science From Indraprastha Institute of
+            Information Technology, Delhi
+          </li>
+          <li>
+            Middle/Highschooling from Aravali Internation School, Faridabad
+          </li>
+          <li>
+            Junior Schooling from Kendriya Vidyalaya, Faridabad and RK. Puram
+          </li>
+        </ol>
+      </div>
+      <div class="text-base">
+        <h3 class="text-2xl">Work Experience</h3>
+        <ol class="list-decimal list-inside pl-2 mt-2 space-y-2">
+          <li>
+            Marketing Engineer at Metaforms (Workhack HQ) <span class="text-sm"
+              >(for a week only)</span>
+          </li>
+          <li>Software Engineer at Chartr Transists</li>
+          <li>Research Software Engineer(Freelance) at Rutgers University</li>
+        </ol>
+      </div>
+      <div class="text-base">
+        <h3 class="text-2xl">Project</h3>
+        <ol class="list-decimal list-inside pl-2 mt-2 space-y-2">
+          <li>
+            <a href="https://www.thelegaltablet.com/" class="hover:underline">
+              <span
+                class="dark:bg-white bg-gray-900 dark:text-gray-900 text-white rounded text-sm font-semibold" style="padding:2px"
+                >WIP</span
+              > Legal Tablet - a website that get updated legal advises</a>
+          </li>
+          <li>
+            Middle/Highschooling from Aravali Internation School, Faridabad
+          </li>
+          <li>
+            Junior Schooling from Kendriya Vidyalaya, Faridabad and RK. Puram
+          </li>
+        </ol>
+      </div>
     </main>
   </body>
 </html>
